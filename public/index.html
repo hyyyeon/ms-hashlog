@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>멋사 로그인 + 피라미드</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 로그인 화면 -->
+  <div id="login-page" class="page">
+    <h2>로그인</h2>
+    <input type="text" id="login-id" placeholder="아이디 입력" /><br /><br />
+    <input type="password" id="login-pw" placeholder="비밀번호 입력" /><br /><br />
+    <button onclick="login()">로그인</button>
+    <p>계정이 없다면? <a href="#" onclick="showPage('signup-page')">회원가입</a></p>
+  </div>
+
+  <!-- 회원가입 화면 -->
+  <div id="signup-page" class="page" style="display: none">
+    <h2>회원가입</h2>
+    <input type="text" id="signup-id" placeholder="아이디 입력" />
+    <button onclick="checkId()">중복확인</button><br /><br />
+    <input type="password" id="signup-pw" placeholder="비밀번호 입력" /><br /><br />
+    <button onclick="signup()">회원가입</button>
+    <p><a href="#" onclick="showPage('login-page')">로그인으로 돌아가기</a></p>
+    <div id="check-result"></div>
+  </div>
+
+  <!-- 피라미드 화면 -->
+  <div id="pyramid-page" class="page" style="display: none">
+    <h2>피라미드 생성기</h2>
+    <input type="text" id="height" placeholder="숫자를 입력하세요" />
+    <button onclick="makePyramid()">만들기</button>
+    <hr />
+    <div id="pyramid"></div>
+    <br />
+    <button onclick="logout()">로그아웃</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
