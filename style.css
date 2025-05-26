@@ -1,0 +1,37 @@
+/* style.css */
+body {
+  max-width: 360px;
+  margin: 50px auto;
+  font-family: '맑은 고딕', sans-serif;
+  text-align: center;
+}
+
+/* .page: 개별 화면 숨기기 기본 */
+.page {
+  display: none;
+}
+
+input {
+  width: 80%;
+  padding: 8px;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 8px 16px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.btn-logout {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+  cursor: pointer;
+}
