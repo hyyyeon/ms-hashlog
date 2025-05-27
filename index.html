@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>회원 시스템</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- 회원가입 -->
+  <div id="signup">
+    <h2>회원가입</h2>
+  <!-- 회원가입 ID,PW 입력 필드 -->
+    <input id="signup-id" placeholder="아이디"><br>
+    <input id="signup-pw" type="password" placeholder="비밀번호"><br>
+  <!-- 가입 버튼: 클릭 시 signup() 함수 실행 -->
+    <button onclick="signup()">가입</button><br>
+    <a href="#" onclick="showLogin()">이미 계정이 있나요? 로그인</a>
+  </div>
+
+<!-- 로그인 -->
+  <div id="login" style="display:none;">
+    <h2>로그인</h2>
+    <input id="login-id" placeholder="아이디"><br>
+    <input id="login-pw" type="password" placeholder="비밀번호"><br>
+    <button onclick="login()">로그인</button><br>
+    <a href="#" onclick="showSignup()">회원가입 하러가기</a>
+  </div>
+
+<!-- 홈 -->
+  <div id="home" style="display:none;">
+    <h2>홈</h2>
+    <p><span id="name"></span>님 환영해요!</p>
+  <!-- 로그아웃 버튼: 클릭 시 logout() 함수 실행 -->
+    <button onclick="logout()">로그아웃</button>
+    <hr>
+
+<!-- ===== 피라미드 생성기 ===== -->
+    <h3>피라미드</h3>
+  <!-- 높이 입력 필드와 생성 버튼 -->
+    <input id="height" type="number" value="5"><button onclick="createPyramid()">만들기</button>
+  <!-- 피라미드 결과 -->
+    <pre id="result"></pre>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
